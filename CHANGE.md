@@ -1,0 +1,1 @@
+1. remove `min-width: 708px`

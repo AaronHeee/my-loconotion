@@ -28,6 +28,11 @@ div[role="button"]:not(.notion-record-icon):hover {
   max-width: 100% !important;
 }
 
+.whenContentEditable {
+  width:100% !important;
+  position: relative !important; 
+}
+
 /* Resizes inlines databases */
 .notion-scroller .notion-collection_view-block > div,
 .notion-scroller .notion-collection_view-block > div > div > div,
@@ -37,8 +42,7 @@ div[role="button"]:not(.notion-record-icon):hover {
 .notion-scroller .notion-collection_view-block .notion-board-view,
 .notion-scroller .notion-collection_view-block .notion-calendar-view {
   max-width: 100% !important;
-  padding-left: unset !important;
-  padding-right: unset !important;
+  padding: 1px  !important;
 }
 
 /* pull alias arrows back inline */
@@ -77,8 +81,17 @@ a[data-token-index] svg.page {
   .notion-scroller > div > div:not([class]) {
     width: 100% !important;
     max-width: 960px !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+
+  .notion-scroller > div > div:not([class]) > div:not([class]) > div:not([class]) > div:not([class]), .notion-scroller > div > div:not([class]) > div:not([class]) > div:not([class]) > div:not([class]) > div:not([class]) {
     padding-left: 0 !important;
     padding-right: 0 !important;
+  }
+  .notion-scroller > div > div:not([class]) > div:not([class]) > div:not([class]) > div:not([class]) > div:not([class]) > div:not([class]) > div{
+    font-size:32px !important;
+    margin:-20px 0 20px 0;
   }
 
   /* normalizes content width */
@@ -147,6 +160,11 @@ a[data-token-index] svg.page {
   padding-left: 0!important;
   padding-right: 0!important;
 }
+
+.notion-scroller {
+  padding: 1px!important;
+}
+
 }
 
 .pseudoAfter:after {
